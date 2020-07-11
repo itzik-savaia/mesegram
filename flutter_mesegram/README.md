@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 This project is a starting point for a Flutter application.
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/JxXVEe6"><a href="//imgur.com/a/JxXVEe6"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
