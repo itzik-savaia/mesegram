@@ -6,11 +6,6 @@ import 'package:flutter_mesegram/views/offers.dart';
 import 'package:flutter_mesegram/views/profile.dart';
 import 'package:flutter_mesegram/views/search.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:flutter_mesegram/views/tv.dart';
-
-// import 'dart:io';
-
-// import 'package:flutter/material.dart';
 // import 'package:camera/camera.dart';
 // import 'package:path/path.dart';
 // import 'package:path_provider/path_provider.dart';
@@ -39,7 +34,6 @@ class _BarViewState extends State<BarView> {
     Container(
       child: ProfileView(),
     ),
-    Container(child: TvView()),
     Container(
       child: MessagesView(),
     ),
@@ -49,6 +43,9 @@ class _BarViewState extends State<BarView> {
   ];
 
   void _onItemTapped(int index) {
+    // if (index == 2) {
+
+    // }
     setState(() {
       _selectedIndex = index;
     });
@@ -72,6 +69,7 @@ class _BarViewState extends State<BarView> {
             onPressed: () {
               setState(() {
                 _selectedIndex = 2;
+                print(_selectedIndex);
               });
             },
             icon: Icon(
@@ -80,28 +78,6 @@ class _BarViewState extends State<BarView> {
             ),
           ),
         ),
-        // actions: <Widget>[
-        //   IconButton(
-        //       icon: Icon(
-        //         MaterialIcons.live_tv,
-        //         color: Colors.black,
-        //       ),
-        //       onPressed: () {
-        //         setState(() {
-        //           _selectedIndex = 6;
-        //         });
-        //       }),
-        //   IconButton(
-        //       icon: Icon(
-        //         FontAwesome.send_o,
-        //         color: Colors.black,
-        //       ),
-        //       onPressed: () {
-        //         setState(() {
-        //           _selectedIndex = 7;
-        //         });
-        //       }),
-        // ],
       ),
       body: tabs[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
